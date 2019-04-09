@@ -1,11 +1,5 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <h1>15 dias de React</h1>
-    );
-  }
-}
+const App = () => <h1>15 dias de React!!</h1>;
 
 export default App;

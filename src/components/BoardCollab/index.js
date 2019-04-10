@@ -1,9 +1,18 @@
 import React from "react";
 
-const BoardColab = () => (
-  <article>
-    <h2>Teste</h2>
-  </article>
-);
+import SquareCollab from "../SquareCollab";
 
-export default BoardColab;
+const squareCollabs = qtd => {
+  let max = qtd;
+  const squares = [];
+
+  while (max--) {
+    squares.push(<SquareCollab key={max} />);
+  }
+
+  return squares;
+};
+
+const BoardCollab = ({ qtd }) => <article>{squareCollabs(qtd)}</article>;
+
+export default BoardCollab;
